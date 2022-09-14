@@ -1,4 +1,4 @@
 ## Test API Swagger PetStore
-### Using:
+### Used:
 - Rest Assured
 - TestNG
