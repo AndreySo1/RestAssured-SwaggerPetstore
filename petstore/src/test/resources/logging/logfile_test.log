@@ -1,0 +1,78 @@
+2022-09-16 14:28:32 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:32 TRACE ApiTest - ---Start test -addNewPetSuccessTest---
+2022-09-16 14:28:33 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:37 TRACE ApiTest - response: Pet(id=555, category=null, name=testCatBarsik2, photoUrls=[testUrl], tags=[], status=null)
+2022-09-16 14:28:37 TRACE ApiTest - ---Finish -addNewPetSuccessTest finished ---
+2022-09-16 14:28:37 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:37 TRACE ApiTest - ---Start test -deletePetSuccessTest---
+2022-09-16 14:28:37 TRACE ApiTest - ---Start test -addNewPetSuccessTest---
+2022-09-16 14:28:37 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:38 TRACE ApiTest - response: Pet(id=555, category=null, name=testCatBarsik2, photoUrls=[testUrl], tags=[], status=null)
+2022-09-16 14:28:38 TRACE ApiTest - ---Finish -addNewPetSuccessTest finished ---
+2022-09-16 14:28:38 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:39 TRACE ApiTest - response: DeletePetResponse(code=200, type=unknown, message=555)
+2022-09-16 14:28:39 TRACE ApiTest - ---Finish -deletePetSuccessTest finished ---
+2022-09-16 14:28:39 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:39 TRACE ApiTest - ---Start test -findsPetsByIdTest---
+2022-09-16 14:28:39 TRACE ApiTest - ---Start test -addNewPetSuccessTest---
+2022-09-16 14:28:39 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:39 TRACE ApiTest - response: Pet(id=555, category=null, name=testCatBarsik2, photoUrls=[testUrl], tags=[], status=null)
+2022-09-16 14:28:39 TRACE ApiTest - ---Finish -addNewPetSuccessTest finished ---
+2022-09-16 14:28:39 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:40 INFO  ApiTest - response: HTTP/1.1 200 OK
+Date: Fri, 16 Sep 2022 11:28:41 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 555,
+    "name": "testCatBarsik2",
+    "photoUrls": [
+        "testUrl"
+    ],
+    "tags": [
+        
+    ]
+}
+
+2022-09-16 14:28:40 TRACE ApiTest - ---Finish -findsPetsByIdTest finished ---
+2022-09-16 14:28:40 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:40 TRACE ApiTest - ---Start test -findsPetsByStatusTest - status = available---
+2022-09-16 14:28:40 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:43 TRACE ApiTest - ---Finish Start test -findsPetsByStatusTest finished ---
+2022-09-16 14:28:43 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:43 TRACE ApiTest - ---Start test -findsPetsByStatusTest - status = pending---
+2022-09-16 14:28:43 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:44 TRACE ApiTest - ---Finish Start test -findsPetsByStatusTest finished ---
+2022-09-16 14:28:44 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:44 TRACE ApiTest - ---Start test -findsPetsByStatusTest - status = sold---
+2022-09-16 14:28:44 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:44 TRACE ApiTest - ---Finish Start test -findsPetsByStatusTest finished ---
+2022-09-16 14:28:44 INFO  ApiTest - ---////////////////////////////////////---
+2022-09-16 14:28:44 TRACE ApiTest - ---Start test -updatePetSuccessTest---
+2022-09-16 14:28:44 TRACE ApiTest - ---Start test -addNewPetSuccessTest---
+2022-09-16 14:28:44 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:45 TRACE ApiTest - response: Pet(id=555, category=null, name=testCatBarsik2, photoUrls=[testUrl], tags=[], status=null)
+2022-09-16 14:28:45 TRACE ApiTest - ---Finish -addNewPetSuccessTest finished ---
+2022-09-16 14:28:45 TRACE ApiTest - Status code - 200
+2022-09-16 14:28:46 INFO  ApiTest - request: Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/555
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	petId=555
+				name=updateName127009393
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2022-09-16 14:28:47 TRACE ApiTest - response: Pet(id=555, category=null, name=updateName127009393, photoUrls=[testUrl], tags=[], status=null)
+2022-09-16 14:28:47 TRACE ApiTest - ---Finish -updatePetSuccessTest finished ---
